@@ -1,0 +1,39 @@
+{
+  "name": "lint-spec",
+  "private": true,
+  "description": "前端编码规范工程化",
+  "scripts": {
+    "preinstall": "npx only-allow pnpm",
+    "init": "pnpm install",
+    "clean": "lerna clean && rimraf ./node_modules",
+    "test": "lerna run test",
+    "deploy": "bash deploy.sh",
+    "publish": "lerna publish",
+    "lint": "markdownlint \"**/*.md\"",
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s"
+  },
+  "npmClient": "pnpm",
+  "keywords": [
+    "lint",
+    "spec"
+  ],
+  "author": "southWind",
+  "license": "ISC",
+  "packageManager": "pnpm@10.12.1",
+  "devDependencies": {
+    "lerna": "^9.0.3",
+    "pnpm": "^10.28.1",
+    "rimraf": "^6.1.2",
+    "vue-template-compiler": "^2.7.16",
+    "vuepress": "^1.9.10",
+    "vuepress-plugin-one-click-copy": "^1.0.6",
+    "vuepress-plugin-zooming": "^1.1.8"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "engines": {
+    "node": ">=20.19.0"
+  }
+}
