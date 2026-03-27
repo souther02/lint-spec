@@ -1,0 +1,37 @@
+{
+  "name": "@lint-spec/commitlint-config",
+  "version": "1.0.0",
+  "description": "Lint commit messages",
+  "main": "index.js",
+  "keywords": [
+    "commit",
+    "commitlint",
+    "commitlint-config"
+  ],
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://github.com/encode-studio-fe/fe-spec#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/encode-studio-fe/fe-spec.git"
+  },
+  "bugs": {
+    "url": "https://github.com/encode-studio-fe/fe-spec/issues"
+  },
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": "./index.js"
+    }
+  },
+  "files": [
+    "index.js"
+  ],
+  "dependencies": {
+    "@commitlint/config-conventional": "^20.4.0",
+    "conventional-changelog-atom": "^5.0.0"
+  },
+  "engines": {
+    "node": ">=20.19.0"
+  }
+}

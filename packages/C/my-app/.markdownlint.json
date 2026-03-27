@@ -1,0 +1,3 @@
+{
+  "extends": "@lint-spec/markdownlint-config"
+}

@@ -1,29 +1,25 @@
 {
   "name": "@lint-spec/markdownlint-config",
-  "version": "1.0.2",
-  "description": "markdownlint 编码规范配置",
-  "homepage": "https://github.com/Yang-yzg/lint-spec.git#readme",
-  "license": "ISC",
-  "author": "southWind",
-  "main": "index.json",
+  "version": "1.0.0",
+  "description": "",
+  "main": "lib/index.json",
   "keywords": [
     "markdownlint",
-    "markdown",
-    "lint",
-    "spec"
+    "markdownlint-config"
   ],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.29.2",
+  "homepage": "https://github.com/encode-studio-fe/fe-spec#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Yang-yzg/lint-spec.git"
+    "url": "git+https://github.com/encode-studio-fe/fe-spec.git"
   },
   "bugs": {
-    "url": "https://github.com/Yang-yzg/lint-spec.git/issues"
+    "url": "https://github.com/encode-studio-fe/fe-spec/issues"
   },
   "peerDependencies": {
     "markdownlint": "^0.40.0"
-  },
-  "publishConfig": {
-    "access": "public",
-    "registry": "https://registry.npmjs.org/"
   }
 }
+

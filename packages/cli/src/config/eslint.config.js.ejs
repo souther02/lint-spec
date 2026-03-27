@@ -1,0 +1,9 @@
+import { defineConfig } from 'eslint/config';
+import lintSpecConfig from '@lint-spec/eslint-config<%- eslintType %>';
+
+export default defineConfig([
+  lintSpecConfig,
+  {
+    ignores: <%- JSON.stringify(eslintIgnores, null, 4) %>,
+  },
+]);

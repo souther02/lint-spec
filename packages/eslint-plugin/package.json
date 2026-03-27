@@ -1,0 +1,38 @@
+{
+  "name": "@lint-spec/eslint-plugin",
+  "version": "1.0.0",
+  "description": "",
+  "main": "lib/index.js",
+  "packageManager": "pnpm@10.29.2",
+  "scripts": {
+    "test": "mocha ./__tests__/**/*.test.js --timeout=5000",
+    "prepublishOnly": "npm run test"
+  },
+  "keywords": [
+    "eslint",
+    "plugin",
+    "eslintplugin",
+    "eslint-plugin"
+  ],
+  "author": "",
+  "license": "ISC",
+  "files": [
+    "lib"
+  ],
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": "./lib/index.js"
+    }
+  },
+  "peerDependencies": {
+    "eslint": ">=9.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^9.39.2"
+  },
+  "engines": {
+    "node": ">=20.19.0"
+  }
+}
+

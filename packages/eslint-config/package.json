@@ -1,0 +1,79 @@
+{
+  "name": "@lint-spec/eslint-config",
+  "version": "1.0.0",
+  "description": "",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "rimraf dist && tsc && tsc-alias",
+    "test": "mocha ./__tests__/**/*.test.js --timeout=5000",
+    "prepublishOnly": "npm run test"
+  },
+  "keywords": [
+    "eslint",
+    "config",
+    "eslintconfig",
+    "eslint-config"
+  ],
+  "author": "",
+  "license": "ISC",
+  "files": [
+    "dist"
+  ],
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js"
+    },
+    "./index": {
+      "import": "./dist/index.js"
+    },
+    "./es5": {
+      "import": "./dist/es5.js"
+    },
+    "./react": {
+      "import": "./dist/react.js"
+    },
+    "./vue": {
+      "import": "./dist/vue.js"
+    },
+    "./node": {
+      "import": "./dist/node.js"
+    },
+    "./jsx-a11y": {
+      "import": "./dist/jsx-a11y.js"
+    },
+    "./typescript/*": {
+      "import": "./dist/typescript/*.js"
+    },
+    "./essential/*": {
+      "import": "./dist/essential/*.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "peerDependencies": {
+    "eslint": ">= 9"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.29.0",
+    "@babel/eslint-parser": "^7.28.6",
+    "@babel/preset-react": "^7.28.5",
+    "@stylistic/eslint-plugin": "^5.7.1",
+    "@types/eslint-plugin-jsx-a11y": "^6.10.1",
+    "@typescript-eslint/parser": "^8.54.0",
+    "eslint": "^9.39.2",
+    "eslint-import-resolver-typescript": "^4.4.4",
+    "eslint-plugin-import": "^2.32.0",
+    "eslint-plugin-jsx-a11y": "^6.10.2",
+    "eslint-plugin-n": "^17.23.2",
+    "eslint-plugin-react": "^7.37.5",
+    "eslint-plugin-react-hooks": "^7.0.1",
+    "eslint-plugin-vue": "^10.7.0",
+    "globals": "^17.3.0",
+    "typescript-eslint": "^8.54.0",
+    "vue-eslint-parser": "^10.2.0"
+  },
+  "engines": {
+    "node": ">=20.19.0"
+  }
+}

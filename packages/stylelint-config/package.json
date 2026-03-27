@@ -1,0 +1,45 @@
+{
+  "name": "@lint-spec/stylelint-config",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "keywords": [
+    "stylelint",
+    "stylelint-config"
+  ],
+  "author": "",
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": "./index.js"
+    }
+  },
+  "files": [
+    "index.js"
+  ],
+  "scripts": {
+    "build": "rollup -c",
+    "test": "node --test"
+  },
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/encode-studio-fe/fe-spec.git"
+  },
+  "bugs": {
+    "url": "https://github.com/encode-studio-fe/fe-spec/issues"
+  },
+  "devDependencies": {
+    "stylelint": "^17.0.0"
+  },
+  "dependencies": {
+    "stylelint-config-standard-scss": "^17.0.0"
+  },
+  "peerDependencies": {
+    "stylelint": "^17.0.0"
+  },
+  "engines": {
+    "node": ">=20.19.0"
+  }
+}
+

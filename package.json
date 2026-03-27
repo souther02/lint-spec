@@ -2,32 +2,35 @@
   "name": "lint-spec",
   "private": true,
   "description": "前端编码规范工程化",
+  "type": "module",
   "scripts": {
     "preinstall": "npx only-allow pnpm",
     "init": "pnpm install",
-    "clean": "lerna clean && rimraf ./node_modules",
+    "clean": "lerna clean && rimraf node_modules",
     "test": "lerna run test",
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs",
     "deploy": "bash deploy.sh",
     "publish": "lerna publish",
-    "lint": "markdownlint \"**/*.md\"",
+    "lint": "markdownlint README.md",
     "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s"
   },
-  "npmClient": "pnpm",
   "keywords": [
-    "lint",
-    "spec"
+    "lints",
+    "@spec",
+    "@spec/lints"
   ],
-  "author": "southWind",
-  "license": "ISC",
-  "packageManager": "pnpm@10.12.1",
   "devDependencies": {
-    "lerna": "^9.0.3",
+    "@types/node": "^25.2.0",
+    "lerna": "^8.2.4",
+    "lodash-es": "^4.17.23",
+    "mocha": "^11.7.5",
     "pnpm": "^10.28.1",
     "rimraf": "^6.1.2",
-    "vue-template-compiler": "^2.7.16",
-    "vuepress": "^1.9.10",
-    "vuepress-plugin-one-click-copy": "^1.0.6",
-    "vuepress-plugin-zooming": "^1.1.8"
+    "tsc-alias": "^1.8.16",
+    "typescript": "^5.9.3",
+    "vitepress": "^1.6.3"
   },
   "publishConfig": {
     "access": "public",
@@ -37,3 +40,4 @@
     "node": ">=20.19.0"
   }
 }
+
