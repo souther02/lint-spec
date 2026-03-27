@@ -1,6 +1,6 @@
 {
   "name": "@lint-spec/cli",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "",
   "module": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -37,7 +37,7 @@
     "@babel/preset-react": "^7.28.5",
     "@commitlint/cli": "^20.4.1",
     "@lint-spec/commitlint-config": "^1.0.3",
-    "@lint-spec/eslint-config": "^1.0.4",
+    "@lint-spec/eslint-config": "^1.0.5",
     "@lint-spec/eslint-plugin": "^1.0.3",
     "@lint-spec/markdownlint-config": "^1.0.3",
     "@lint-spec/stylelint-config": "^1.0.3",
